@@ -6,8 +6,8 @@ branding:
   color: blue
 
 inputs:
-  version:
-    description: The Flutter version to use
+  flutter-channel:
+    description: The Flutter channel to use
     default: stable
     required: false
 
@@ -17,7 +17,7 @@ runs:
     - name: Flutter Setup
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: ${{ inputs.version }}
+        channel: ${{ inputs.flutter-channel }}
     - name: Run Checks
       shell: bash
       run: bash "${{github.action_path}}/shellexec.sh"
