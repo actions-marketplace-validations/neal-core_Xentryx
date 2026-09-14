@@ -51,6 +51,6 @@ if [$failures -eq 0]; then
     echo "All checks passed successfully."
     exit 0
 else
-    echo "$failures checks failed. Please fix the issues and try again."
+    echo "Analysis completed with $failures check(s) failed. Please fix the issues and try again."
     exit 1
 fi
