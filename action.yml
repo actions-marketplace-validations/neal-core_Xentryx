@@ -1,6 +1,10 @@
 name: Laenel Flutter Analyzer
 description: A GitHub Action that analyzes your Flutter project
 
+branding:
+  icon: shield
+  color: blue
+
 inputs:
   version:
     description: The Flutter version to use
