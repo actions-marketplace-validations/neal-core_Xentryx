@@ -46,7 +46,8 @@ if [ $status -ne 0 ]; then
 else
     echo "All tests passed successfully."
 fi
-
+echo
+echo "==============================="
 if [$failures -eq 0]; then
     echo "All checks passed successfully."
     exit 0
